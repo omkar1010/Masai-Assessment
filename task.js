@@ -1,17 +1,21 @@
-let arr = ["study" , "book reading", "smaple", "test"]
+let task  = ["coding", "lecture","rest","study", "chess"];
+let arr = []
+let arr2 = []
+ 
+for(let i= 0; i<task.length-1;i++){
+ 
+  arr.push(task[i+1])// remove the first element
 
-arr.shift()
-let task1 = "Addtask1"
-let task2 = "Addtask2"
-let narr = []
-narr.push(task1)
-    narr.push(task2)
-for(let i=0;i<arr.length;i++){
-
-    
-    narr.push(arr[i])
 }
-narr.pop()
-   
+task = arr
 
-console.log(narr)
+arr2 =["task1","task2"];
+
+for(let i=0;i< task.length;i++){
+  arr2.push(task[i])
+}
+
+arr2[arr2.length-1] = "newtask added"
+
+task = arr2
+console.log(task)
