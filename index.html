@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>European Countries Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>European Countries Dashboard</h1>
+
+  <!-- Controls Section -->
+  <div class="controls">
+    <input 
+      type="text" 
+      id="search" 
+      placeholder="Search by name..."
+    >
+    <select id="sort">
+      <option value="">-- Sort By --</option>
+      <option value="name-asc">Name (A–Z)</option>
+      <option value="name-desc">Name (Z–A)</option>
+      <option value="pop-asc">Population (Low → High)</option>
+      <option value="pop-desc">Population (High → Low)</option>
+    </select>
+  </div>
+
+  <!-- Summary Section -->
+  <div class="summary" id="summary"></div>
+
+  <!-- Country List Section -->
+  <div class="country-list" id="country-list"></div>
+
+  <!-- Pagination Section -->
+  <div class="pagination">
+    <button id="prev">Previous</button>
+    <span id="page-info"></span>
+    <button id="next">Next</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
